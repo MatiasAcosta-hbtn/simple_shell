@@ -1,4 +1,4 @@
- Simple_shell
+ # Simple_shell
 
  Simple_shell is a project created to simulate a command interpeter. In it you can write the usual commands as an standart input to be executed.
 
