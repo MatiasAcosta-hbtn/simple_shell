@@ -1,0 +1,73 @@
+.TH man 1 "25 Nov 2020" "0.1" "simple_shell man page"
+
+.SH NAME
+.B simple_shell
+- Simple shell made in C to interact with a linux operating system.
+
+.SH SYNOPSIS
+#include <string.h>
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <unistd.h>
+
+#include <sys/types.h>
+
+#include <sys/stat.h>
+
+#include <unistd.h>
+
+#include <sys/wait.h>
+
+#include <limits.h>
+
+#include <signal.h>
+
+.SH DESCRIPTION
+This simple shell will works same as shell. It means that  the program will
+ receive keyboard commands and passes them to the operating system to carry out.
+
+.SH Return Value
+Return status value when user want to exit the shell.
+
+.SH PATH
+
+It will look inside al directions in PATH env variable for executable.
+
+.SH COMMANDS
+.B ls [OPTION] : list directory contents
+
+.B pwd : print name of current/working directory
+
+.B Handling Ctrl+C:
+The simple shell will be terminated.
+
+.B Handling Ctrl+D:
+The simple shell will be terminated.
+
+.SH BUILINTS
+.B exit [STATUS] : cause normal process termination.
+
+.B env : run a program in a modified environment.
+
+.B cd [PATH]: change directory
+
+.SH OPTIONS
+.B simple_shell
+Command options will be typed after the main command followed by a space and a
+ '-' symbol.
+
+.SH EXAMPLE
+
+[command] [options]
+
+$ ls -l
+
+
+.SH BUGS
+No known bugs.
+
+.SH AUTHOR
+Chloe Dumit, Julian Arbini.
